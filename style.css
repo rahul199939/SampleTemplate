@@ -1,0 +1,86 @@
+#logo{    
+    padding: 1%;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: -3% !important;
+    padding: 0%;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;    
+    margin-left: 27% !important;
+}
+ul li{
+    display: inline;     
+}
+
+ul li a{    
+    padding: 15px;
+    text-decoration: none !important;
+    color: black;
+}
+span{
+    display: inline;
+}
+.fa-lg{
+    font-size: 0.6em;
+    padding-left: 4px;
+    vertical-align: 19%;
+}
+.getQuote{
+    width: 4%;
+    height: 60px;
+    border-radius: 37px;
+    background-color: #896EFF;
+    margin-top: -4%;
+    margin-left: 85%;
+}
+.greaterThen{
+    font-size: 33px;
+    color: white;
+    padding-left: 19px;
+    /* padding-top: 11px; */
+}
+#quote{
+    float: right;
+    margin-top: -3%;
+    font-weight: bold;
+    color: #896EFF;
+}
+.navigationBar{
+    background-color: #FAFAFF;
+}
+#desc{
+    font-size: 65px;
+    font-weight: bold;
+}
+.fontColor{
+    color: #896EFF;
+}
+#desc2{
+    font-size: 22px;
+}
+.learnMore{
+    width: 8%;
+    height: 60px;
+    border-radius: 37px;
+    background-color: #896EFF;
+}
+#learn{
+    margin-top: -6%;
+    margin-left: 10%;
+}
+.row{
+    background-image: url('./Image/section1-BG.png');
+}
+.addImage{
+    background-image: url('./Image/section1-BG2.png');
+}
+.addPadding{
+    padding-top: 140px;
+}
+.positionImage{
+    position: absolute;
+    left: 2px;
+}
