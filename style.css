@@ -111,50 +111,6 @@ span {
 
 #client-1a {
     display: none;
-    position: absolute;
-    z-index: 99;
-    top: 5px;
-    left: 74px;
-}
-
-#client-2b {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    top: 5px;
-    left: 19%;
-}
-
-#client-3b {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    top: 0px;
-    left: 34.7%;
-}
-
-#client-4b {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    top: 9px;
-    left: 49.7%;
-}
-
-#client-5b {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    top: 5px;
-    left: 65.3%;
-}
-
-#client-6b {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    top: 8px;
-    left: 80.8%;
 }
 
 #client-1:hover {
@@ -166,6 +122,14 @@ span {
     display: inline;
 }
 
+#client-1:hover #client-1b {
+    display: none;
+}
+
+#client-2b {
+    display: none;
+}
+
 #client-2:hover {
     background-color: #896EFF;
     border-radius: 3%;
@@ -173,6 +137,14 @@ span {
 
 #client-2:hover #client-2b {
     display: inline;
+}
+
+#client-2:hover #client-2a{
+    display: none;
+}
+
+#client-3b {
+    display: none;
 }
 
 #client-3:hover {
@@ -184,6 +156,14 @@ span {
     display: inline;
 }
 
+#client-3:hover #client-3a {
+    display: none;
+}
+
+#client-4b {
+    display: none;
+}
+
 #client-4:hover {
     background-color: #896EFF;
     border-radius: 3%;
@@ -191,6 +171,14 @@ span {
 
 #client-4:hover #client-4b {
     display: inline;
+}
+
+#client-4:hover #client-4a {
+    display: none;
+}
+
+#client-5b {
+    display: none;
 }
 
 #client-5:hover {
@@ -202,6 +190,14 @@ span {
     display: inline;
 }
 
+#client-5:hover #client-5a {
+    display: none;
+}
+
+#client-6b {
+    display: none;
+}
+
 #client-6:hover {
     background-color: #896EFF;
     border-radius: 3%;
@@ -209,6 +205,10 @@ span {
 
 #client-6:hover #client-6b {
     display: inline;
+}
+
+#client-6:hover #client-6a {
+    display: none;
 }
 
 .menuText {
@@ -260,4 +260,21 @@ span {
 
 .addBackground .col-3{
     flex: 0 0 23% !important;
+}
+
+#Newsletter{
+    background-image: url('./Image/backCover-1.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuSubHeading-2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F2471;
+}
+
+#testimonial{
+    background-image: url('./Image/backCover.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
