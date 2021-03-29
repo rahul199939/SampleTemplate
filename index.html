@@ -10,65 +10,86 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="navigationBar">
-        <div id="logo">
-            <img src="./Image/logo.png" alt="">
-            <ul>
-                <li><a href="">Home<i class="fa fa-chevron-down fa-lg"></i></a></li>
-                <li><a href="">Pages<i class="fa fa-chevron-down fa-lg"></i></a></li>
-                <li><a href="">Services<i class="fa fa-chevron-down fa-lg"></i></a></li>
-                <li><a href="">Blog<i class="fa fa-chevron-down fa-lg"></i></a></li>
-                <li><a href="">Contact Us<i class="fa fa-chevron-down fa-lg"></i></a></li>
-            </ul>
-            <div class="getQuote">
-                <p class="greaterThen">></p>
+    <div class="container-fluid navigationBar">
+        <div class="row bg-white">
+            <div class="col-5 col-md-3 py-2">
+                <img src="./Image/logo.png" alt="">
             </div>
-            <h4 id="quote">Get A Quote</h4>
+            <div class="sidebar navBarRes" id="mySidebar">
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Services</a>
+                <a href="">Blog</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col-3 offset-4 py-4 text-right navBarRes" id="main">
+                <button type="button" id="open" class="btn btn-light openBtn" onclick="openNav()"
+                    style="border: 2px solid white ;">&#9776;</button>
+                <button type="button" id="close" class="btn btn-light openBtn" onclick="closeNav()"
+                    style="border: 2px solid white ;">&times;</button>
+            </div>
+            <div class="col-md-6 py-4 navBarPc">
+                <ul>
+                    <li><a href="">Home<i class="fa fa-chevron-down fa-lg"></i></a></li>
+                    <li><a href="">Pages<i class="fa fa-chevron-down fa-lg"></i></a></li>
+                    <li><a href="">Services<i class="fa fa-chevron-down fa-lg"></i></a></li>
+                    <li><a href="">Blog<i class="fa fa-chevron-down fa-lg"></i></a></li>
+                    <li><a href="">Contact Us<i class="fa fa-chevron-down fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 navBarPc">
+                <div class="getQuote text-center">
+                    <p class="greaterThen">></p>
+                </div>
+                <h4 id="quote">Get A Quote</h4>
+            </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row setBg pb-5 pl-3 pt-5">
-            <div class=" col-sm-12 col-md-6 addImage pb-5 addPadding">
+    <div class="container-fluid" id="section-1">
+        <div class="row setBg py-5 pl-3">
+            <div class="col-sm-12 col-md-6 addImage">
                 <h4 class="fontColor">WE CREATE IDEAS</h4>
                 <p id="desc" style="color: #32337D;">Build Stunning <span class="fontColor">Website</span> With Slack
                     Agency</p><br>
                 <p id="desc2">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at
                     elit fringilla ac at purus.</p><br>
-                <div class="learnMore">
+                <div class="learnMore text-center">
                     <p class="greaterThen">></p>
                 </div>
                 <h4 class="fontColor" id="learn">Learn More</h4>
             </div>
-            <div class="col-sm-12 col-md-6 pb-5">
-                <img src="./Image/section1-move.png" alt="" width="100%" height="100%">
+            <div class="col-12 col-md-6 py-5">
+                <img src="./Image/section1-move.png" alt="" width="100%" height="auto">
                 <img src="./Image/section1-move2.png" class="positionImage" alt="">
             </div>
         </div>
-        <div class="row mt-5 ml-3">
-            <div id="client-1" class="clientImage text-center col-md-2 col-sm-6">
+        <div class="row my-5">
+            <div id="client-1" class="clientImage text-center col-6 col-md-2">
                 <img id="client-1b" src="./Image/client-1(b).png" alt="">
                 <img id="client-1a" src="./Image/client-1(a).png" alt="">
             </div>
-            <div id="client-2" class="clientImage text-center col-md-2 col-sm-6">
+            <div id="client-2" class="clientImage text-center col-6 col-md-2">
                 <img id="client-2a" src="./Image/client-2(a).png" alt="">
                 <img id="client-2b" src="./Image/client-2(b).png" alt="">
             </div>
-            <div id="client-3" class="clientImage text-center col-md-2 col-sm-6">
+            <div id="client-3" class="clientImage text-center col-6 col-md-2 hideClient">
                 <img id="client-3a" src="./Image/client-3(a).png" alt="">
                 <img id="client-3b" src="./Image/client-3(b).png" alt="">
             </div>
-            <div id="client-4" class="clientImage text-center col-md-2 col-sm-6">
+            <div id="client-4" class="clientImage text-center col-6 col-md-2 hideClient">
                 <img id="client-4a" src="./Image/client-4(a).png" alt="">
                 <img id="client-4b" src="./Image/client-4(b).png" alt="">
             </div>
-            <div id="client-5" class="clientImage text-center col-md-2 col-sm-6">
+            <div id="client-5" class="clientImage text-center col-6 col-md-2 hideClient">
                 <img id="client-5a" src="./Image/client-5(a).png" alt="">
                 <img id="client-5b" src="./Image/client-5(b).png" alt="">
             </div>
-            <div id="client-6" class="clientImage text-center col-md-2 col-sm-6">
+            <div id="client-6" class="clientImage text-center col-6 col-md-2 hideClient">
                 <img id="client-6a" src="./Image/client-6(a).png" alt="">
                 <img id="client-6b" src="./Image/client-6(b).png" alt="">
             </div>
@@ -79,8 +100,8 @@
                 <p class="mt-2 menuSubHeading">Provide Awesome Service To You</p>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-3 offset-1 text-center">
+        <div class="row mt-5" id="services">
+            <div class="col-sm-12 col-md-3 offset-md-2 text-center">
                 <div id="backgroundYellow">
                     <i class="fa fa-laptop fa-3x" style="padding-top: 1.5rem;"></i>
                 </div>
@@ -90,7 +111,7 @@
                         exercitationem quisquam sunt doloribus inventore reiciendis aliquam assumenda temporibue.</p>
                 </div>
             </div>
-            <div class="col-3 text-center">
+            <div class="col-sm-12 col-md-3 text-center">
                 <div id="backgroundPink">
                     <i class="fa fa-laptop fa-3x" style="padding-top: 1.5rem;"></i>
                 </div>
@@ -100,7 +121,7 @@
                         exercitationem quisquam sunt doloribus inventore reiciendis aliquam assumenda temporibue.</p>
                 </div>
             </div>
-            <div class="col-3 text-center">
+            <div class="col-sm-12 col-md-3 text-center">
                 <div id="backgroundGreen">
                     <i class="fa fa-laptop fa-3x" style="padding-top: 1.5rem;"></i>
                 </div>
@@ -112,102 +133,103 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <img src="./Image/paint.png" width="100%" height="100%" alt="">
             </div>
-            <div class="col-6 pt-5">
+            <div class="col-sm-12 col-md-6 pt-5">
                 <p><span class="menuText">About Us</span></p>
                 <p class="menuSubHeading">How We Can Help You Achieve Your Business Goal</p>
-                <p class="pt-5 col-10">
+                <p class="pt-5 col-sm-12 col-md-10">
                     Integer pretium molestie nisl, non blandit lectus suscipit in. Vivamus tellus diam, iaculis eget
                     nulla sit amet, tincidunt consectetur sem. Suspendisse laoreet, quam sed faucibus feugiat, tortor
                     velit suscipit orci, sed consectetur ante eros id urna. Mauris luctus nulla ut pharetra tempor.
                     <br><br>
                     Mauris egestas eleifend sapien eu malesuada. Phasellus at metus eget sapien tristique accumsan non
                     sit amet augue.
-                </p><br><br>
-                <div class="pt-5">
-                    <div class="learnMore">
+                </p><br>
+                <div class="py-4">
+                    <div class="learnMore text-center">
                         <p class="greaterThen">></p>
                     </div>
                     <h4 class="fontColor" id="learn">Learn More</h4>
                 </div>
             </div>
         </div>
-        <section class="row addBackground bg-primary">
-            <div class="container pt-5 pb-5 text-center">
-                <div class="row">
-                    <div class="col-3 bg-white text-center pt-4 mb-5" style="border-radius: 10%;">
-                        <div id="backgroundGreen">
-                            <i class="fa fa-smile-o fa-3x" style="padding-top: 1.5rem;"></i>
-                        </div>
-                        <h3>Satisfied Clients</h3>
-                        <p style="font-size: 40px;">9875</p>
+        <div class="row addBackground bg-primary py-5 px-3 text-center">
+            <div class="bg-white text-center aboutus">
+                <div class="pt-3">
+                    <div class="backgroundGreen-1">
+                        <i class="fa fa-smile-o fa-3x" style="padding-top: 1.5rem;"></i>
                     </div>
-                    <div class="col-3 bg-white text-center pt-4 mt-5" style="border-radius: 10%;margin-left: 25px;">
-                        <div id="backgroundGreen">
-                            <i class="fa fa-laptop fa-3x" style="padding-top: 1.5rem;"></i>
-                        </div>
-                        <h3>
-                            Project Completed</h3>
-                        <p style="font-size: 40px;">8765</p>
-                    </div>
-                    <div class="col-3 bg-white text-center pt-4 mb-5" style="border-radius: 10%;margin-left: 25px;">
-                        <div id="backgroundGreen">
-                            <i class="fa fa-rocket fa-3x" style="padding-top: 1.5rem;"></i>
-                        </div>
-                        <h3>Project Lunched</h3>
-                        <p style="font-size: 40px;">7894</p>
-                    </div>
-                    <div class="col-3 bg-white text-center pt-4 mt-5" style="border-radius: 10%;margin-left: 25px;">
-                        <div id="backgroundGreen">
-                            <i class="fa fa-laptop fa-3x" style="padding-top: 1.5rem;"></i>
-                        </div>
-                        <h3>Year Completed</h3>
-                        <p style="font-size: 40px;">65</p>
-                    </div>
+                    <h3 style="font-weight: bold;">Satisfied Clients</h3>
+                    <p style="font-size: 40px;">9875</p>
                 </div>
             </div>
-        </section>
+            <div class="bg-white text-center aboutus-1">
+                <div class="pt-3">
+                    <div class="backgroundGreen-1">
+                        <i class="fa fa-laptop fa-3x" style="padding-top: 1.5rem;"></i>
+                    </div>
+                    <h3 style="font-weight: bold;">
+                        Project Completed</h3>
+                    <p style="font-size: 40px;">8765</p>
+                </div>
+            </div>
+            <div class="bg-white text-center aboutus-1">
+                <div class="pt-3">
+                    <div class="backgroundGreen-1">
+                        <i class="fa fa-rocket fa-3x" style="padding-top: 1.5rem;"></i>
+                    </div>
+                    <h3 style="font-weight: bold;">Project Lunched</h3>
+                    <p style="font-size: 40px;">7894</p>
+                </div>
+            </div>
+            <div class="bg-white text-center aboutus-1">
+                <div class="pt-3">
+                    <div id="backgroundGreen">
+                        <i class="fa fa-laptop fa-3x" style="padding-top: 1.5rem;"></i>
+                    </div>
+                    <h3 style="font-weight: bold;">Year Completed</h3>
+                    <p style="font-size: 40px;">65</p>
+                </div>
+            </div>
+        </div>
         <div class="row mt-5">
-            <div class="col-6 pl-4">
+            <div class="col-sm-12 col-md-6 pl-4">
                 <p><span class="menuText">Features</span></p>
                 <p class="menuSubHeading">Our Working Process To Help Your Boost Your Business</p>
                 <div class="row">
-                    <div class="col-2"
-                        style="border-radius: 100%;width: 100px;height: 115px;border: 5px solid #FF586E;">
-                        <i class="fa fa-laptop fa-4x pl-2" style="padding-top: 0.9rem;"></i>
+                    <div class="col-3 col-md-2 featurePink text-center">
+                        <i class="fa fa-laptop fa-4x pt-3"></i>
                     </div>
-                    <div class="col-7">
+                    <div class="col-9 col-md-7">
                         <h3 style="font-weight: bold;color: #1F2471;">Idea & Analysis Gathering</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-2 offset-1"
-                        style="border-radius: 100%;width: 100px;height: 115px;border: 5px solid #FFA808;">
-                        <i class="fa fa-laptop fa-4x pl-2" style="padding-top: 0.9rem;"></i>
+                    <div class="col-3 col-md-2 offset-1 featureYellow text-center">
+                        <i class="fa fa-laptop fa-4x pt-3"></i>
                     </div>
-                    <div class="col-7">
+                    <div class="col-7 col-md-7">
                         <h3 style="font-weight: bold;color: #1F2471;">Designing & Developing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-2"
-                        style="border-radius: 100%;width: 100px;height: 115px;border: 5px solid #0AA17A;">
-                        <i class="fa fa-laptop fa-4x pl-2" style="padding-top: 0.9rem;"></i>
+                    <div class="col-3 col-md-2 featureGreen text-center">
+                        <i class="fa fa-laptop fa-4x pt-3"></i>
                     </div>
-                    <div class="col-7">
+                    <div class="col-9 col-md-7">
                         <h3 style="font-weight: bold;color: #1F2471;">Testing & Lunching</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
                 <img src="./Image/codePerson.png" width="100%" height="100%" alt="">
             </div>
         </div>
@@ -216,65 +238,64 @@
                 <p><span class="menuText">Projects</span></p>
                 <p class="mt-2 menuSubHeading">Take A Look At Our Latest Portfolio</p>
             </div>
-            <div class="col-12 text-center">
-                <p class="pt-4 pb-4" style="font-size: 30px;background-color: #F3F0FF;color: #1F2471;"><span
-                        class="pr-5 bg-primary pl-5 pt-2 pb-2" style="border-radius: 10%;">All</span><span
-                        class="pl-5 pr-5">Web Design</span><span class="pl-5 pr-5">Web Development</span><span
-                        class="pl-5 pr-5">Branding</span><span class="pl-5 pr-5">Mobile App</span><span
-                        class="pl-5 pr-5">SEO</span></p>
+            <div class="col-12 text-center py-4 pl-2" id="paraFormate">
+                <p class="pt-4 pb-4" id="paraFormate"><span class="px-5 bg-primary py-2"
+                        style="border-radius: 10%;">All</span><span class="px-5">Web Design</span><span class="px-5">Web
+                        Development</span><span class="px-5">Branding</span>
+                    <span class="px-5">Mobile App</span><span class="px-5">SEO</span>
+                </p>
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-4" style="margin-bottom: 11%;">
+            <div class="col-12 col-md-4 product1">
                 <img src="./Image/product1.jpg" width="100%" height="100%" alt="" style="border-radius: 5%;">
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <img src="./Image/product2.jpg" width="100%" height="100%" alt="" style="border-radius: 5%;">
             </div>
-            <div class="col-4" style="margin-bottom: 11%;">
+            <div class="col-12 col-md-4 product3">
                 <img src="./Image/product3.jpg" width="100%" height="100%" alt="" style="border-radius: 5%;">
             </div>
-            <div class="col-4" style="margin-top: -9%;margin-bottom: 8%;">
+            <div class="col-12 col-md-4 product4">
                 <img src="./Image/product4.jpg" width="100%" height="100%" alt="" style="border-radius: 5%;">
             </div>
-            <div class="col-4" style="margin-top: 2%;margin-bottom: 8%;">
+            <div class="col-12 col-md-4 product5">
                 <img src="./Image/product5.jpg" width="100%" height="100%" alt="" style="border-radius: 5%;">
             </div>
-            <div class="col-4" style="margin-top: -9%;margin-bottom: 8%;">
+            <div class="col-12 col-md-4 product6">
                 <img src="./Image/product6.jpg" width="100%" height="100%" alt="" style="border-radius: 5%;">
             </div>
         </div>
         <section class="row bg-primary" id="Newsletter">
-            <div class="col-4 pt-3">
-                <img src="./Image/client-7.png" alt="">
+            <div class="col-12 col-md-4  pt-3">
+                <img src="./Image/client-7.png" class="img-fluid" alt="">
             </div>
-            <div class="col-8 pt-5">
+            <div class="col-12 col-md-8  pt-5">
                 <p><span class=""
                         style="background-color: #1A88FF;padding: 12px 25px;font-size: 20px ; border-radius: 14px;color: #FFFFFF;">Newsletter</span>
                 </p>
-                <p class="mt-2" style="font-size: 45px;color: #FFFFFF;font-weight: bold;">Subscribe To Our Newsletter
+                <p class="mt-2" id="newsDesc">Subscribe To Our Newsletter
                     For Latest Update Of Finanical Services </p>
-                <p style="color: #FFFFFF;font-size: 21px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                <p class="newsDesc-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Nisi dolorem cupiditate fugit laudantium libero culpa, deleniti quaerat dolor similique voluptate
                     repellendus sint saepe fuga inventore officiis alias est illum incidunt.</p>
             </div>
         </section>
         <section class="row mt-5">
-            <div class="col-5">
+            <div class="col-12 col-md-5">
                 <p><span class="menuText">Pricing</span></p>
                 <p class="menuSubHeading-2">Most Prominent Plans To Offer You Great Value</p>
-                <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea eius
+                <p class="priceDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea eius
                     pariatur, repudiandae rem,
                     officia nulla ratione temporibus iste ut quae, repellendus nesciunt ex deserunt est. Velit alias
                     esse aperiam!</p>
-                <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea eius
+                <p class="priceDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea eius
                     pariatur, repudiandae.</p>
             </div>
-            <div class="col-7 pb-5">
-                <div class="text-center mt-5 mb-5 p-3"
-                    style="width: 35%;display: inline-block;box-shadow: 0px 0 10px rgba(31, 66, 135, 0.3);border-radius: 10px;position: absolute;left:10%;">
-                    <h3 style="color:#1F2471;font-weight: bold;">Basic Plan</h3>
-                    <h2 style="color:#7050FF;font-weight: bold;">$49</h2>
+            <div class="col-12 col-md-7 pb-5">
+                <div class="text-center mt-5 mb-5 p-3" id="basicPlan">
+                    <h3 class="headColor">Basic Plan</h3>
+                    <h2 class="priceColor">$49</h2>
                     <h6>Graphic Design</h6>
                     <h6>Web Design</h6>
                     <h6>UI/UX</h6>
@@ -282,10 +303,9 @@
                     <h6>SEO Marketing</h6>
                     <h6>Business Analysis</h6>
                 </div>
-                <div class="text-center pt-5 pb-5"
-                    style="background-color: #7050FF;color: #FFFFFF;width: 40%;display: inline-block;box-shadow: 0px 0 10px rgba(31, 66, 135, 0.3);border-radius: 10px;position: relative;left:34%;">
-                    <h3 style="color:#FFFFFF;font-weight: bold;">Standart Plan</h3>
-                    <h2 style="color:#F3F0FF;font-weight: bold;">$99</h2>
+                <div class="text-center pt-5 pb-5" id="standarPlan">
+                    <h3 id="standarColor">Standart Plan</h3>
+                    <h2 id="standarColorPrice">$99</h2>
                     <h6>Graphic Design</h6>
                     <h6>Web Design</h6>
                     <h6>UI/UX</h6>
@@ -293,10 +313,9 @@
                     <h6>SEO Marketing</h6>
                     <h6>Business Analysis</h6>
                 </div>
-                <div class="text-center mt-5 mb-5 p-3"
-                    style="width: 35%;display: inline-block;box-shadow: 0px 0 10px rgba(31, 66, 135, 0.3);border-radius: 10px;position: absolute;right: 7%;">
-                    <h3 style="color:#1F2471;font-weight: bold;">Premium Plan</h3>
-                    <h2 style="color:#7050FF;font-weight: bold;">$149</h2>
+                <div class="text-center mt-5 mb-5 p-3" id="premiumPlan">
+                    <h3 class="headColor">Premium Plan</h3>
+                    <h2 class="priceColor">$149</h2>
                     <h6>Graphic Design</h6>
                     <h6>Web Design</h6>
                     <h6>UI/UX</h6>
@@ -306,70 +325,94 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid mt-5  bg-primary">
-            <!-- <div class="container"> -->
-            <div class="row pt-5 pl-5 pb-5" id="testimonial">
-                <div class="col-4 bg-white" style="width: 100px;border-radius: 10px;">
-                    <p class="pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus aliquid
-                        saepe debitis
-                        iure
-                        voluptates perspiciatis dolorem pariatur, ullam ipsa a quo atque soluta adipisci nesciunt
-                        facilis
-                        in. Nam, voluptatem.</p>
-                    <hr>
-                    <div class="row pl-3 pb-3">
-                        <div class="col-2" style="border-radius: 100%;border: 5px solid #896EFF;">
-                            <img src="./Image/testimonial-1.jpg"
-                                style="border-radius: 100%; max-width: 180%;height: auto;margin-left: -15px;" alt="">
-                        </div>
-                        <div class="col-7">
-                            <h3>Lora Price</h3>
-                            <h4>CEO & Founder</h4>
-                        </div>
+        <div class="row mt-5  bg-primary" id="testimonial">
+            <div class="col-12 col-md-3" id="review-2">
+                <p class="pt-5"><span
+                        style="background-color: #1A88FF;padding: 12px 25px;font-size: 20px ; border-radius: 14px;color: #FFFFFF;">Testimonial</span>
+                </p>
+                <p id="review">See What Are They Say About Us</p>
+            </div>
+            <div class="col-11 col-md-4 my-5 mx-3 bg-white" style="border-radius: 10px;">
+                <p class="pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus aliquid
+                    saepe debitis
+                    iure
+                    voluptates perspiciatis dolorem pariatur, ullam ipsa a quo atque soluta adipisci nesciunt
+                    facilis
+                    in. Nam, voluptatem.</p>
+                <hr>
+                <div class="row pl-3 pb-3">
+                    <div class="col-3 col-md-2" style="border-radius: 100%;border: 5px solid #896EFF;">
+                        <img src="./Image/testimonial-1.jpg" class="imgStyle" alt="">
                     </div>
-                </div>
-                <div class="col-4 ml-4 bg-white" style="width: 100px;border-radius: 10px;">
-                    <p class="pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus aliquid
-                        saepe debitis
-                        iure
-                        voluptates perspiciatis dolorem pariatur, ullam ipsa a quo atque soluta adipisci nesciunt
-                        facilis
-                        in. Nam, voluptatem.</p>
-                    <hr>
-                    <div class="row pl-3 pb-3">
-                        <div class="col-2" style="border-radius: 100%;border: 5px solid #896EFF;">
-                            <img src="./Image/testimonial-1.jpg"
-                                style="border-radius: 100%; max-width: 180%;height: auto;margin-left: -15px;" alt="">
-                        </div>
-                        <div class="col-7">
-                            <h3>Lora Price</h3>
-                            <h4>CEO & Founder</h4>
-                        </div>
+                    <div class="col-7">
+                        <h3>Lora Price</h3>
+                        <h4>CEO & Founder</h4>
                     </div>
-                </div>
-                <div class="col-3">
-                    <p class="pt-2"><span
-                            style="background-color: #1A88FF;padding: 12px 25px;font-size: 20px ; border-radius: 14px;color: #FFFFFF;">Testimonial</span>
-                    </p>
-                    <p style="font-weight: bold;font-size: 45px;color: #FFFFFF;">See What Are They Say About Us</p>
                 </div>
             </div>
-            <!-- </div> -->
-        </section>
+            <div class="col-11 col-md-4 my-5 mx-3 bg-white" style="border-radius: 10px;">
+                <p class="pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus aliquid
+                    saepe debitis
+                    iure
+                    voluptates perspiciatis dolorem pariatur, ullam ipsa a quo atque soluta adipisci nesciunt
+                    facilis
+                    in. Nam, voluptatem.</p>
+                <hr>
+                <div class="row pl-3 pb-3">
+                    <div class="col-3 col-md-2" style="border-radius: 100%;border: 5px solid #896EFF;">
+                        <img src="./Image/testimonial-1.jpg" class="imgStyle" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h3>Lora Price</h3>
+                        <h4>CEO & Founder</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3" id="review-1">
+                <p class="pt-5"><span
+                        style="background-color: #1A88FF;padding: 12px 25px;font-size: 20px ; border-radius: 14px;color: #FFFFFF;">Testimonial</span>
+                </p>
+                <p id="review">See What Are They Say About Us</p>
+            </div>
+        </div>
         <section class="row mt-5" id="contact">
-            <div class="col-5">
+            <div class="col-12 col-md-6">
                 <p><span class="menuText">Contact Us</span></p>
                 <p class="menuSubHeading-2">We Love To Help Great Companies To Enlarge Their Revenues.</p>
-                <input type="text" placeholder="First Name" size="25px"
+                <!-- <input type="text" placeholder="First Name" size="25px"
                     style="border-radius: 10px;padding:10px 10px;margin: 5px;"><input type="text"
                     placeholder="Last Name" size="25px" style="border-radius: 10px;padding:10px 10px;margin: 5px;">
                 <input type="email" placeholder="Email Address" size="25px"
                     style="border-radius: 10px;padding:10px 10px;margin: 5px;"><input type="text"
-                    placeholder="Phone Number" size="25px" style="border-radius: 10px;padding:10px 10px;margin: 5px;">
-                <textarea name="" style="border-radius: 10px;padding:10px 10px;margin-top: 15px;" id="" cols="55"
-                    rows="5" placeholder="Enter Message"></textarea>
+                    placeholder="Phone Number" size="25px" style="border-radius: 10px;padding:10px 10px;margin: 5px;"> -->
+                <!-- <textarea name="" style="border-radius: 10px;padding:10px 10px;margin-top: 15px;" id="" cols="20"
+                    rows="5" placeholder="Enter Message"></textarea> -->
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter Name" class="form-control px-5 py-3">                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 textboxStyle">
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter Last Name" class="form-control px-5 py-3">                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter Email" class="form-control px-5 py-3">                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 textboxStyle">
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter Phone Number" class="form-control px-5 py-3">                            
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <img src="./Image/contactUs.png" style="max-width: 100%;height:auto;" alt="">
             </div>
         </section>
@@ -380,10 +423,16 @@
         </section>
     </div>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->   
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
